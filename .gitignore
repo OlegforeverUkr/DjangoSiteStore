@@ -20,6 +20,3 @@ pgdata/
 pgsql/
 *.sqlite3
 *.db
-
-# others
-bad_words.txt
