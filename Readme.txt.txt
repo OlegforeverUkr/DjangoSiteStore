@@ -1,0 +1,1 @@
+Project to create an online store in Django
