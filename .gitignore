@@ -1,0 +1,25 @@
+# virtual environment
+/venv/
+/env/
+/.venv/
+/.env/
+/Env/
+/Venv/
+.env
+
+# python byte-compiled
+__pycache__
+
+# ide configs
+/.vscode/
+/.idea/
+
+
+# local databases
+pgdata/
+pgsql/
+*.sqlite3
+*.db
+
+# others
+bad_words.txt
