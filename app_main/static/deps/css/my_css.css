@@ -37,12 +37,15 @@ body {
   font-size: 0.7rem;
 }
 
-.font-italian {
-  font-family: 'Roboto Slab', serif;
+
+.font-nosifer {
+  font-family: "Nosifer", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
-.text-italian {
-  color: #eb7527;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+.font-nosifer {
+  color: #f3efec;
+  text-shadow: 2px 2px 4px rgba(236, 13, 13, 0.973);
   text-decoration: underline;
 }

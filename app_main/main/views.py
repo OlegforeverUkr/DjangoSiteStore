@@ -2,7 +2,11 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'main/index.html')
+    context = {
+        "title": "Home",
+        "content": "Pizza House HOME"
+    }
+    return render(request=request, template_name='main/index.html', context=context)
 
 
 def about(request):
