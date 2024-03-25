@@ -21,6 +21,7 @@ pgsql/
 *.sqlite3
 *.db
 
+
 # others
 /media/
 media/
