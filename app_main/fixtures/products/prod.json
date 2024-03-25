@@ -1,0 +1,30 @@
+[
+    {
+        "model": "products.products",
+        "pk": 1,
+        "fields": {
+            "name": "Mexico",
+            "slug": "mexico",
+            "description": "Пицца Mexico",
+            "image": "",
+            "price": "120.0",
+            "discount": "0.0",
+            "quantity": 2,
+            "category": 4
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 2,
+        "fields": {
+            "name": "Italiano",
+            "slug": "italiano",
+            "description": "Пицца Italiano",
+            "image": "",
+            "price": "140.0",
+            "discount": "1.0",
+            "quantity": 2,
+            "category": 4
+        }
+    }
+]

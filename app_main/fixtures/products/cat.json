@@ -1,0 +1,58 @@
+[
+    {
+        "model": "products.categories",
+        "pk": 4,
+        "fields": {
+            "name": "Пицца",
+            "slug": "pizza"
+        }
+    },
+    {
+        "model": "products.categories",
+        "pk": 5,
+        "fields": {
+            "name": "Все товары",
+            "slug": "all"
+        }
+    },
+    {
+        "model": "products.categories",
+        "pk": 6,
+        "fields": {
+            "name": "Суши",
+            "slug": "sushi"
+        }
+    },
+    {
+        "model": "products.categories",
+        "pk": 7,
+        "fields": {
+            "name": "Напитки",
+            "slug": "napitki"
+        }
+    },
+    {
+        "model": "products.categories",
+        "pk": 8,
+        "fields": {
+            "name": "Алкоголь",
+            "slug": "alkogol"
+        }
+    },
+    {
+        "model": "products.categories",
+        "pk": 9,
+        "fields": {
+            "name": "Кофе",
+            "slug": "kofe"
+        }
+    },
+    {
+        "model": "products.categories",
+        "pk": 10,
+        "fields": {
+            "name": "Десерты",
+            "slug": "deserty"
+        }
+    }
+]
