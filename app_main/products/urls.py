@@ -5,5 +5,5 @@ app_name = "products"
 
 urlpatterns = [
     path('', view=views.catalog, name='index'),
-    path('product/<int:product_id>/', view=views.product, name='product'),
+    path('product/<slug:product_slug>/', view=views.product, name='product'),
 ]

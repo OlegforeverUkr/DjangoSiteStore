@@ -13,8 +13,8 @@ def catalog(request):
     return render(request=request, template_name="products/catalog.html", context=context)
 
 
-def product(request, product_id):
-    product = Products.objects.get(id=product_id)
+def product(request, product_slug):
+    product = Products.objects.get(slug=product_slug)
 
     context = {
         "title": "Catalog",
