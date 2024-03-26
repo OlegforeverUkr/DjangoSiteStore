@@ -1,10 +1,14 @@
-from django.shortcuts import render
+from django.shortcuts import get_list_or_404, render
 
 from products.models import Products
 
 
-def catalog(request):
-    products = Products.objects.all()
+def catalog(request, category_slug):
+
+    if category_slug == "all":
+        products = Products.objects.all()
+    else:
+        products = get_list_or_404(Products.objects.filter(category__slug=category_slug))
 
     context = {
         "title": "Catalog",
