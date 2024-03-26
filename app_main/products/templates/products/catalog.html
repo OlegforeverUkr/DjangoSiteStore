@@ -91,7 +91,7 @@
             <li class="page-item {% if not all_prod.has_previous %}disabled{% endif %}">
               <a class="page-link" href="
               {% if all_prod.has_previous %}
-                {% url "catalog:index" slug_url all_prod.previous_page_number %}
+                ?page={{all_prod.previous_page_number}}
               {% else %}
                 #
               {% endif %}
@@ -101,7 +101,7 @@
             {% for page in all_prod.paginator.page_range %}
                 {% if page >= all_prod.number|add:-2 and page <= all_prod.number|add:2 %}
                     <li class="page-item {% if all_prod.number == page %}disabled{% endif %}">
-                        <a class="page-link" href="{% url "catalog:index" slug_url page %}">{{ page }}</a>
+                        <a class="page-link" href="?page={{page}}">{{ page }}</a>
                     </li>
                 {% endif %}
             {% endfor %}
@@ -109,7 +109,7 @@
             <li class="page-item {% if not all_prod.has_next %}disabled{% endif %}">
                 <a class="page-link" href="
                 {% if all_prod.has_next %}
-                  {% url "catalog:index" slug_url all_prod.next_page_number %}
+                    ?page={{all_prod.next_page_number}}
                 {% else %}
                   #
                 {% endif %}
