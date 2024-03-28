@@ -52,6 +52,14 @@
         </form>
     </div>
 
+
+    {% if request.GET.q %}
+    <h2 class="font-nosifer mt-5 pt-5">Результат поиска по запросу "{{ request.GET.q }}"</h2>
+        {% if not all_prod %}
+            <h1 class="font-nosifer mt-5 pt-5">По запросу ничего не найдено...</h1>
+        {% endif %}
+    {% endif %}
+
     {% for product in all_prod %}
         <!-- Карта товара -->
         <div class="col-lg-4 col-md-6 p-4">
@@ -88,6 +96,7 @@
 
 </div>
 <!-- Пагинация -->
+{% if all_prod %}
 <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center my-4">
         <div class="custom-shadow d-flex">
@@ -109,4 +118,7 @@
         </div>
     </ul>
 </nav>
+{% else %}
+{% endif %}
+
 {% endblock content %}
