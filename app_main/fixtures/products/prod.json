@@ -6,7 +6,7 @@
             "name": "Mexico",
             "slug": "mexico",
             "description": "Пицца Mexico",
-            "image": "",
+            "image": "product_images/mexico_hkPcdqf.jpg",
             "price": "120.0",
             "discount": "0.0",
             "quantity": 2,
@@ -20,11 +20,235 @@
             "name": "Italiano",
             "slug": "italiano",
             "description": "Пицца Italiano",
-            "image": "",
+            "image": "product_images/bazilik.jpg",
             "price": "140.0",
             "discount": "1.0",
             "quantity": 2,
             "category": 4
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 3,
+        "fields": {
+            "name": "Brokkoli",
+            "slug": "brokkoli",
+            "description": "Pizza Broffoli",
+            "image": "product_images/brokkoli.jpg",
+            "price": "0.0",
+            "discount": "0.0",
+            "quantity": 1,
+            "category": 4
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 4,
+        "fields": {
+            "name": "Pizza Kolbaska",
+            "slug": "pizza-kolbaska",
+            "description": "Pizza Kolbaska",
+            "image": "product_images/kolbasnaya.jpg",
+            "price": "140.0",
+            "discount": "0.0",
+            "quantity": 1,
+            "category": 4
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 5,
+        "fields": {
+            "name": "Pizza Kukuruza",
+            "slug": "pizza-kukuruza",
+            "description": "Pizza Kukuruza",
+            "image": "product_images/kukuruza.jpeg",
+            "price": "120.0",
+            "discount": "0.0",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 6,
+        "fields": {
+            "name": "Nigiri",
+            "slug": "nigiri",
+            "description": "Sushi Nigiri",
+            "image": "product_images/nigiri.jpg",
+            "price": "160.0",
+            "discount": "0.0",
+            "quantity": 0,
+            "category": 6
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 7,
+        "fields": {
+            "name": "Pepsi",
+            "slug": "pepsi",
+            "description": "Drink PEPSI",
+            "image": "product_images/pepsi.jpg",
+            "price": "70.0",
+            "discount": "0.0",
+            "quantity": 2,
+            "category": 7
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 9,
+        "fields": {
+            "name": "Сашими",
+            "slug": "sashimi",
+            "description": "Свежайшие сашими",
+            "image": "product_images/sashimi.jpg",
+            "price": "90.0",
+            "discount": "10.0",
+            "quantity": 1,
+            "category": 6
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 10,
+        "fields": {
+            "name": "Филадельфия",
+            "slug": "filadelfiya",
+            "description": "Сет филадельфия - всеми любимый сет",
+            "image": "product_images/philadelphia.png",
+            "price": "150.0",
+            "discount": "0.0",
+            "quantity": 2,
+            "category": 6
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 11,
+        "fields": {
+            "name": "Сет Акелла",
+            "slug": "set-akella",
+            "description": "Сет в состав которого входит ...",
+            "image": "product_images/set.jpg",
+            "price": "400.0",
+            "discount": "15.0",
+            "quantity": 3,
+            "category": 6
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 12,
+        "fields": {
+            "name": "Сет Викинг",
+            "slug": "set-viking",
+            "description": "Сет Викинг в состав которого входит ...",
+            "image": "product_images/set2.jpg",
+            "price": "500.0",
+            "discount": "0.0",
+            "quantity": 3,
+            "category": 6
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 13,
+        "fields": {
+            "name": "Чизкейк",
+            "slug": "chizkejk",
+            "description": "Нежнейший чизкейк",
+            "image": "product_images/cheese.jpg",
+            "price": "120.0",
+            "discount": "20.0",
+            "quantity": 0,
+            "category": 10
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 14,
+        "fields": {
+            "name": "Творожный десерт",
+            "slug": "tvorozhnyj-desert",
+            "description": "Самый нежный творожный десерт",
+            "image": "product_images/tvorog.jpg",
+            "price": "150.0",
+            "discount": "30.0",
+            "quantity": 3,
+            "category": 10
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 15,
+        "fields": {
+            "name": "Кола",
+            "slug": "kola",
+            "description": "Кока кола \r\nОбьем - 0,5",
+            "image": "product_images/cola.png",
+            "price": "50.0",
+            "discount": "0.0",
+            "quantity": 0,
+            "category": 7
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 16,
+        "fields": {
+            "name": "Джек Дениелс",
+            "slug": "dzhek-deniels",
+            "description": "Виски Джек Дениелс\r\nЦена за 100гр",
+            "image": "product_images/Jack-Daniels.jpg",
+            "price": "220.0",
+            "discount": "10.0",
+            "quantity": 0,
+            "category": 8
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 17,
+        "fields": {
+            "name": "Джим Бим",
+            "slug": "dzhim-bim",
+            "description": "Бурбон Джим Бим\r\nЦена за 100гр",
+            "image": "product_images/Jim-Beam.jpg",
+            "price": "180.0",
+            "discount": "0.0",
+            "quantity": 0,
+            "category": 8
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 18,
+        "fields": {
+            "name": "Ольмека",
+            "slug": "olmeka",
+            "description": "Текила Ольмека\r\nЦена за 100гр",
+            "image": "product_images/Olmeca.jpg",
+            "price": "200.0",
+            "discount": "5.0",
+            "quantity": 0,
+            "category": 8
+        }
+    },
+    {
+        "model": "products.products",
+        "pk": 19,
+        "fields": {
+            "name": "Белвени",
+            "slug": "belveni",
+            "description": "Шотландский виски Белвени\r\nЦена за 100гр",
+            "image": "product_images/Balvenie.jpg",
+            "price": "250.0",
+            "discount": "0.0",
+            "quantity": 0,
+            "category": 8
         }
     }
 ]

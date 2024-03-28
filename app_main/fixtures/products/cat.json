@@ -4,7 +4,8 @@
         "pk": 4,
         "fields": {
             "name": "Пицца",
-            "slug": "pizza"
+            "slug": "pizza",
+            "display_number": 1
         }
     },
     {
@@ -12,7 +13,8 @@
         "pk": 5,
         "fields": {
             "name": "Все товары",
-            "slug": "all"
+            "slug": "all",
+            "display_number": 0
         }
     },
     {
@@ -20,7 +22,8 @@
         "pk": 6,
         "fields": {
             "name": "Суши",
-            "slug": "sushi"
+            "slug": "sushi",
+            "display_number": 2
         }
     },
     {
@@ -28,7 +31,8 @@
         "pk": 7,
         "fields": {
             "name": "Напитки",
-            "slug": "napitki"
+            "slug": "napitki",
+            "display_number": 4
         }
     },
     {
@@ -36,7 +40,8 @@
         "pk": 8,
         "fields": {
             "name": "Алкоголь",
-            "slug": "alkogol"
+            "slug": "alkogol",
+            "display_number": 6
         }
     },
     {
@@ -44,7 +49,8 @@
         "pk": 9,
         "fields": {
             "name": "Кофе",
-            "slug": "kofe"
+            "slug": "kofe",
+            "display_number": 5
         }
     },
     {
@@ -52,7 +58,8 @@
         "pk": 10,
         "fields": {
             "name": "Десерты",
-            "slug": "deserty"
+            "slug": "deserty",
+            "display_number": 3
         }
     }
 ]
