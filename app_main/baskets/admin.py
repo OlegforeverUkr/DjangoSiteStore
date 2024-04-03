@@ -1,4 +1,4 @@
 from django.contrib import admin
-# from baskets.models import User
+from baskets.models import Basket
 
-# admin.site.register(User)
+admin.site.register(Basket)
