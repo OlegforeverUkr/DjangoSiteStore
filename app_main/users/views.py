@@ -63,3 +63,7 @@ def logout(request):
     messages.warning(request=request, message="Вы вышли из аккаунта.")
     auth.logout(request=request)
     return HttpResponseRedirect(reverse('user:login'))
+
+
+def users_basket(request):
+    return render(request, "users/user-cart.html")
