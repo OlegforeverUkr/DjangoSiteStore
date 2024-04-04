@@ -1,7 +1,13 @@
 {% extends "main/base.html" %}
 {% load static %}
+{% load baskets_tags %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
 
 {% block content %}
+{% user_carts request as carts %}
 <div class="row">
     <div class="container mt-5">
         <div class="row justify-content-center">

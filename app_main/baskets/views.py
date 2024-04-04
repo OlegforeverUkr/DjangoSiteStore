@@ -1,6 +1,7 @@
 from django.shortcuts import redirect
 from baskets.models import Basket
 from products.models import Products
+from django.contrib import messages
 
 
 def basket_add(request, product_slug):
@@ -15,6 +16,8 @@ def basket_add(request, product_slug):
                 carts.save()
         else:
             Basket.objects.create(user=request.user, product=product, quantity=1)
+
+        messages.success(request=request, message=f"{request.user.username}, {product.name} добавлен в корзину.")
 
         return redirect(request.META["HTTP_REFERER"])
 

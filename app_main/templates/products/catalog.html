@@ -2,6 +2,10 @@
 {% load static %}
 {% load prod_tag %}
 
+{% block modal_cart %}
+{% include "baskets/includes/cart_button.html" %}
+{% endblock modal_cart %}
+
 {% block css %}
     <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">

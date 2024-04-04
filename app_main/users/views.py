@@ -66,4 +66,5 @@ def logout(request):
 
 
 def users_basket(request):
-    return render(request, "users/user-cart.html")
+    context = {"title": "Корзина"}
+    return render(request, "users/user-cart.html", context)
