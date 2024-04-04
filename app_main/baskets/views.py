@@ -1,12 +1,17 @@
+from django.http import JsonResponse
 from django.shortcuts import redirect
+from django.template.loader import render_to_string
 from baskets.models import Basket
+from baskets.utils import get_user_baskets
 from products.models import Products
 from django.contrib import messages
 from django.core.exceptions import ObjectDoesNotExist
 
 
-def basket_add(request, product_slug):
-    product = Products.objects.get(slug=product_slug)
+def basket_add(request):
+    product_id = request.POST.get("product_id")
+    print(product_id)
+    product = Products.objects.get(id=product_id)
 
     if request.user.is_authenticated:
         carts = Basket.objects.filter(user=request.user, product=product)
@@ -18,9 +23,17 @@ def basket_add(request, product_slug):
         else:
             Basket.objects.create(user=request.user, product=product, quantity=1)
 
-        messages.success(request=request, message=f"{request.user.username}, {product.name} добавлен в корзину.")
+    user_cart = get_user_baskets(request)
+    cart_items_html = render_to_string(
+        "baskets/includes/included_basket.html", {"carts": user_cart}, request=request)
 
-        return redirect(request.META["HTTP_REFERER"])
+    response_data = {
+        "message": "Товар добавлен в корзину",
+        "cart_items_html": cart_items_html,
+    }
+
+    return JsonResponse(response_data)
+
 
 
 
@@ -35,7 +48,6 @@ def basket_remove(request, basket_id):
     try:
         basket = Basket.objects.get(id=basket_id)
         basket.delete()
-        messages.success(request=request, message=f"{request.user.username}, товар {basket.product.name} удален.")
         return redirect(request.META["HTTP_REFERER"])
     
     except ObjectDoesNotExist:
