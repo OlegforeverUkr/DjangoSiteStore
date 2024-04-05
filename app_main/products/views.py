@@ -1,7 +1,7 @@
 from django.core.paginator import Paginator
-from django.shortcuts import get_list_or_404, render
+from django.shortcuts import get_object_or_404, render
 
-from products.models import Products
+from products.models import Products, Categories
 from products.utils import query_search
 
 
@@ -16,7 +16,8 @@ def catalog(request, category_slug=None):
     elif query:
         products = query_search(query)
     else:
-        products = get_list_or_404(Products.objects.filter(category__slug=category_slug))
+        category = get_object_or_404(Categories, slug=category_slug)
+        products = Products.objects.filter(category=category)
 
     if on_sale:
         products = products.filter(discount__gt=0)
